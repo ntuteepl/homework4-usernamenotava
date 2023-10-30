@@ -16,18 +16,18 @@ int main() {
     };  
 int N, acc, pw; 
 scanf("%d", &N);
-assert(a>=0 && a<=10);
-for(int i=0;i<a;i++){
+assert(N>=0 && N<=10);
+for(int i=0;i<N;i++){
 bool used = false;
 scanf("%d %d", &acc, &pw);
-for(int j=0;j<6;j++){
-if(acc = data[j][0] && pw = data[j][1]){
-printf("%d", data[j][2]);
+for(int j = 0;j < 6; j++){
+ if(acc == data[j][0] && pw == data[j][1]){
+printf("%d\n", data[j][2]);
 used =true;
 }
 }
 if(!used)
-  printf("error\n")
+  printf("error\n");
 }
 return 0;
 }
