@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <iostream>  
-using namespace std;  
+#include <stdlib.h>
+#include <stdbool.h>
+#include <assert.h>  
   
 int main() {  
  
@@ -13,29 +14,20 @@ int main() {
     {775, 666, 12000},  
     {566, 221, 7000}  
     };  
-    int N; 
-    cin >> N;  
-    cin.ignore();   
-    int acc, pw;  
-    for(int i = 0;i < N;i++)  
-    {  
-        int f = 0;  
-        cin >> acc >> pw;  
-        for(int j = 0;j < 6;j++)  
-        {  
-            if(acc == data[j][0] && pw == data[j][1])  
-            {  
-                cout << data[j][2] << endl;  
-            }  
-            else  
-            {  
-                f++;  
-            }  
-        }  
-        if(f == 6) 
-        {  
-            cout << "error" << endl;  
-        }  
-    }  
-    return 0;  
-}  
+int N, acc, pw; 
+scanf("%d", &N);
+assert(a>=0 && a<=10);
+for(int i=0;i<a;i++){
+bool used = false;
+scanf("%d %d", &acc, &pw);
+for(int j=0;j<6;j++){
+if(acc = data[j][0] && pw = data[j][1]){
+printf("%d", data[j][2]);
+used =true;
+}
+}
+if(!used)
+  printf("error\n")
+}
+return 0;
+}
